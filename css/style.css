@@ -1,0 +1,173 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	width: 1017px;
+	margin: 0 auto;
+	border: 7px solid #e0ebf5;
+}
+
+header {
+	height: 120px;
+	margin: 1px 2px;
+	border: 2px solid #262626;
+	position: relative;
+}
+
+
+.logo {
+	background: url(../images/home.png) no-repeat center center;
+	background-color: #e6e6e6;
+	width: 76px;
+	height: 76px;
+	float: left;
+	margin: 8px;
+	padding: 10px;
+	border: 2px solid #262626;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.logo a {
+	font-size: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+nav {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+ul.mobile-menu, .menu-trigger {
+	display: none;
+}
+
+ul.menu {
+	margin: 0;
+}
+
+ul.menu li {
+	display: inline-block;
+	border-top: 2px solid #262626;
+	border-left: 2px solid #262626;
+	padding: 15px 60px;
+	font-size: 21px;
+	cursor: pointer;
+	background: #e6e6e6;
+}
+
+li.first-button, li.second-button {
+	margin-right: -4px;
+}
+
+ul.menu li:hover, ul.menu li:active, ul.menu li:focus, 
+ul.mobile-menu li:hover, ul.mobile-menu li:active, ul.mobile-menu li:focus,
+ul.menu li.active-first, ul.menu li.active-second, ul.menu li.active-third {
+	background: #fff;
+}
+
+.main {
+	padding: 42px;
+}
+
+.item {
+	width: 280px;
+	height: 520px;
+	overflow-y: hidden;
+	display: inline-block;
+	margin-right: 36px;
+	border: 2px solid #262626;
+	position: relative;
+	display: inline-table;
+}
+
+
+.tl, .tc, .tr, .ml, .mr, .bl, .bc, .br { 
+	width: 8px; 
+	height: 8px; 
+	border-radius: 50%; 
+	background-color: #00e258;
+	position: absolute;
+	display: none;
+}
+
+
+.item.active .tl, .item.active .tc, .item.active .tr, .item.active .ml, .item.active .mr, 
+.item.active .bl, .item.active .bc, .item.active .br {
+	display: block;
+}
+
+.tl, .tc, .tr {
+	top: -4px;
+}
+
+.tl {
+	left: -4px;
+}
+
+.tc {
+	left: 50%;
+}
+
+.tr {
+	right: -4px;
+}
+
+.ml {
+	top: 50%;
+	left: -4px;
+}
+
+.mr {
+	top: 50%;
+	right: -4px;
+}
+
+.bl, .bc, .br {
+	bottom: -4px;
+}
+
+.bl {
+	left: -4px;
+}
+
+.bc {
+	left: 50%;
+}
+
+.br {
+	right: -4px;
+}
+
+.item:last-child {
+	margin-right: 0;
+}
+
+.item h1 {
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  font-size: 80px;
+  margin: 0;
+}
+
+.item p {
+	margin: 0;
+	color: #a1a1a1;
+}
+
+.item#first h1 {
+	z-index: -1;
+}
+
+
+
